@@ -10,5 +10,5 @@ RUN make
 FROM alpine:3.7
 COPY --from=builder /opt/kubekick/bin/kubekick /usr/local/bin/kubekick
 
-ENTRYPOINT /usr/local/bin/kubekick
+ENTRYPOINT ["kubekick"]
 
